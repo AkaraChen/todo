@@ -16,7 +16,7 @@
     "vite": "^3.2.3"
   },
   "dependencies": {
-    "@akrc/nashi": "^0.2.1",
+    "@akrc/nashi": "0.2.2",
     "@akrc/ringo": "^0.1.3",
     "@twind/forms": "^0.1.4"
   }

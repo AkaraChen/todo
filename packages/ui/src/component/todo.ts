@@ -1,5 +1,8 @@
 import nashi from "@akrc/nashi";
+import {tw} from "twind";
 
-const todo = nashi.create("div");
-
-export default todo;
+export default (text: string) =>
+  nashi
+    .create("div")
+    .text(text)
+    .class(tw`p-2`);
