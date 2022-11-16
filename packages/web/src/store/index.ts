@@ -17,6 +17,6 @@ export const remove = (id: string) => {
   store.splice(index, 1);
 };
 
-export const current = () => {
+export const current = (): Readonly<Array<todo>> => {
   return store.slice();
 };
