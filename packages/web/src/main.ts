@@ -3,6 +3,7 @@ import {tw} from "twind";
 import input from "./component/input";
 import list from "./component/list";
 import "./twind";
+import "./trpc";
 
 const container = nashi
   .create("div")

@@ -1,5 +1,5 @@
 {
-  "name": "ui",
+  "name": "@todo/web",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,6 +18,9 @@
   "dependencies": {
     "@akrc/nashi": "0.2.2",
     "@akrc/ringo": "^0.1.3",
+    "@todo/core": "workspace:^1.0.0",
+    "@trpc/client": "10.0.0-rc.8",
+    "@trpc/server": "10.0.0-rc.8",
     "@twind/forms": "^0.1.4"
   }
 }
