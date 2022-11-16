@@ -18,6 +18,7 @@
 
 1. trpc：后端框架
 2. typeorm：orm
-3. mysql：数据库
+3. sqlite：数据库
+4. log4js+consola: log
 
 用 pnpm 管理项目的依赖，monorepo 架构。

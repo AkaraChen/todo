@@ -1,0 +1,5 @@
+CREATE TABLE todo (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	description TEXT,
+	active INTEGER
+);

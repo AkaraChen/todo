@@ -3,7 +3,7 @@ import {nanoid} from "nanoid";
 interface todo {
   id: string;
   description: string;
-  status: "Done" | "Todo";
+  active: boolean;
 }
 
 let store: Array<todo> = [];
