@@ -5,10 +5,10 @@ log4js.configure({
     appenders: {
         core: {
             type: 'file',
-            filename: '../../core.log',
-        },
+            filename: '../../core.log'
+        }
     },
-    categories: {default: {appenders: ['core'], level: 'info'}},
+    categories: {default: {appenders: ['core'], level: 'info'}}
 });
 
 const logger = log4js.getLogger('core');
@@ -33,5 +33,5 @@ export default {
     success(message: string) {
         consola.success(message);
         logger.info(message);
-    },
+    }
 };

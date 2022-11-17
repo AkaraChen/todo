@@ -3,7 +3,7 @@ import {AppRouter} from '@todo/core/router';
 import {message} from '@akrc/ringo';
 
 export const trpc = createTRPCProxyClient<AppRouter>({
-    links: [httpBatchLink({url: 'http://localhost:3000/trpc'})],
+    links: [httpBatchLink({url: 'http://localhost:3000/trpc'})]
 });
 
 const init = async () => {
@@ -11,9 +11,9 @@ const init = async () => {
         await trpc.greeting.query();
     } catch {
         message({
-            text: "Can't connect to server",
+            text: 'Can\'t connect to server',
             type: 'error',
-            showClose: true,
+            showClose: true
         });
     }
 };

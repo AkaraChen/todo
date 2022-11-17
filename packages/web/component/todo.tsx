@@ -6,6 +6,12 @@ import {notice} from '@akrc/ringo';
 import {useSetAtom} from 'jotai';
 import {todos} from '../store';
 
+interface Properties {
+    id: number;
+    description: string;
+    active: boolean;
+}
+
 const Todo = ({description, active, id}: Properties) => {
     const [status, setStatus] = useState(active);
     const [display, setDisplay] = useState(true);
@@ -19,7 +25,7 @@ const Todo = ({description, active, id}: Properties) => {
                 if (!current) {
                     notice({text: 'Congratulations!', type: 'success'});
                 } else {
-                    notice({text: "What's up?", type: 'info'});
+                    notice({text: 'What\'s up?', type: 'info'});
                 }
             })
             .catch(() => {
@@ -30,8 +36,8 @@ const Todo = ({description, active, id}: Properties) => {
         trpc.todo.delete
             .mutate(id)
             .then(() => {
-                set((todo) => {
-                    const index = todo.findIndex((item) => item.id === id);
+                set(todo => {
+                    const index = todo.findIndex(item => item.id === id);
                     return [...todo.slice(0, index), ...todo.slice(index)];
                 });
                 setDisplay(false);
@@ -69,11 +75,5 @@ const Todo = ({description, active, id}: Properties) => {
         </div>
     );
 };
-
-interface Properties {
-    id: number;
-    description: string;
-    active: boolean;
-}
 
 export default Todo;

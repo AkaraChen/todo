@@ -1,6 +1,8 @@
 import {procedure, router} from '../trpc';
 import {z} from 'zod';
-import {createTodo, deleteTodo, getAllTodo, toggleTodo} from '../service/todo';
+import {
+    createTodo, deleteTodo, getAllTodo, toggleTodo
+} from '../service/todo';
 
 export const todoRoute = router({
     create: procedure
@@ -18,5 +20,5 @@ export const todoRoute = router({
         }),
     getAll: procedure.query(async () => {
         return await getAllTodo();
-    }),
+    })
 });

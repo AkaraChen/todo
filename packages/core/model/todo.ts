@@ -3,11 +3,11 @@ import {Column, Entity, PrimaryGeneratedColumn} from 'typeorm';
 @Entity()
 export default class Todo {
     @PrimaryGeneratedColumn('increment')
-    id: number;
+        id: number;
 
     @Column('text')
-    description: string;
+        description: string;
 
     @Column('boolean')
-    active: boolean;
+        active: boolean;
 }

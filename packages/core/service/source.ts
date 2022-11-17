@@ -6,7 +6,7 @@ import Todo from '../model/todo';
 export const AppDataSource = new DataSource({
     type: 'sqlite',
     database: '../../data.db',
-    entities: [Todo],
+    entities: [Todo]
 });
 
 export const databaseInit = async () => {
@@ -15,6 +15,6 @@ export const databaseInit = async () => {
         await AppDataSource.initialize();
         logger.success('Init database connection successfully!');
     } catch {
-        logger.error("Can't connect to database.");
+        logger.error('Can\'t connect to database.');
     }
 };

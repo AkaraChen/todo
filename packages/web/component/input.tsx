@@ -16,20 +16,20 @@ const Input = () => {
         setInput('');
         trpc.todo.create
             .mutate(input)
-            .then((id) => {
-                setTodo((todo) => [
+            .then(id => {
+                setTodo(todo => [
                     ...todo,
-                    {id, description: input, active: true},
+                    {id, description: input, active: true}
                 ]);
                 notice({
                     text: 'Todo has created successfully.',
-                    type: 'success',
+                    type: 'success'
                 });
             })
             .catch(() => {
                 notice({
                     text: 'Todo create failed',
-                    type: 'error',
+                    type: 'error'
                 });
             });
     };
