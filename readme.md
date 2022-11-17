@@ -8,8 +8,8 @@
 
 前端：
 
-1. Nashi.js: 个人作品，jQuery 的替代品
-2. Rxjs：js 的响应式编程实现之一
+1. React: 界面库
+2. Redux：状态管理
 3. twind：Tailwind 的替代品，原理不太一样用起来一样
 4. motion：非常轻量且强大的动画库
 5. vite：用作 dev server 和打包器
