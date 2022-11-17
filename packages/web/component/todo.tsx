@@ -12,25 +12,33 @@ const Todo = ({description, active, id}: Properties) => {
     const set = useSetAtom(todos);
     const toggle = () => {
         const current = !status;
-        if (!current) {
-            notice({text: 'Congratulations!', type: 'success'});
-        } else {
-            notice({text: "What's up?", type: 'info'});
-        }
-        try {
-            trpc.todo.toggle.mutate({active: current, id});
-            setStatus(current);
-        } catch {}
+        trpc.todo.toggle
+            .mutate({active: current, id})
+            .then(() => {
+                setStatus(current);
+                if (!current) {
+                    notice({text: 'Congratulations!', type: 'success'});
+                } else {
+                    notice({text: "What's up?", type: 'info'});
+                }
+            })
+            .catch(() => {
+                notice({text: 'Toggle failed.'});
+            });
     };
     const remove = () => {
-        try {
-            trpc.todo.delete.mutate(id);
-            set((todo) => {
-                const index = todo.findIndex((item) => item.id === id);
-                return [...todo.slice(0, index), ...todo.slice(index)];
+        trpc.todo.delete
+            .mutate(id)
+            .then(() => {
+                set((todo) => {
+                    const index = todo.findIndex((item) => item.id === id);
+                    return [...todo.slice(0, index), ...todo.slice(index)];
+                });
+                setDisplay(false);
+            })
+            .catch(() => {
+                notice({text: 'Remove failed.'});
             });
-            setDisplay(false);
-        } catch {}
     };
     return (
         <div
