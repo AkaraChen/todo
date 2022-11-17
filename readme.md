@@ -2,14 +2,19 @@
 
 入门经典项目 Todolist，虽然我算不上新手了，但是我想整个狠活，用最强的技术栈造最简单的玩具。
 
-## 技术栈
+## 截图
 
-> 大部分还没上
+优雅。
+
+![](./screenshot.png)
+![](./screenshot-alt.png)
+
+## 技术栈
 
 前端：
 
 1. React: 界面库
-2. Redux：状态管理
+2. Jotai：状态管理
 3. twind：Tailwind 的替代品，原理不太一样用起来一样
 4. motion：非常轻量且强大的动画库
 5. vite：用作 dev server 和打包器
