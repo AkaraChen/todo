@@ -6,66 +6,66 @@ import {notice} from '@akrc/ringo';
 import {useSetAtom} from 'jotai';
 import {todos} from '../store';
 
-const Todo = ({description, active, id}: Props) => {
-	const [status, setStatus] = useState(active);
-	const [display, setDisplay] = useState(true);
-	const set = useSetAtom(todos);
-	const toggle = () => {
-		const current = !status;
-		if (!current) {
-			notice({text: 'Congratulations!', type: 'success'});
-		} else {
-			notice({text: "What's up?", type: 'info'});
-		}
-		try {
-			trpc.todo.toggle.mutate({active: current, id});
-			setStatus(current);
-		} catch (e) {}
-	};
-	const remove = () => {
-		try {
-			trpc.todo.delete.mutate(id);
-			set((todo) => {
-				const index = todo.findIndex((item) => item.id === id);
-				return [...todo.slice(0, index), ...todo.slice(index)];
-			});
-			setDisplay(false);
-		} catch (e) {}
-	};
-	return (
-		<div
-			className={tw`flex justify-between py-2 px-3 shadow rounded mb-4 bg-white text(gray-700)`}
-			style={{display: display ? '' : 'none'}}
-		>
-			{description}
-			<div className={tw`flex`}>
-				{status ? (
-					<IconCircleCheck
-						className={tw`mr-2`}
-						color="green"
-						onClick={toggle}
-					/>
-				) : (
-					<IconRefreshDot
-						className={tw`mr-2`}
-						color="orange"
-						onClick={toggle}
-					/>
-				)}
-				<IconCircleMinus
-					color="currentColor"
-					className={tw`text-gray-700`}
-					onClick={remove}
-				/>
-			</div>
-		</div>
-	);
+const Todo = ({description, active, id}: Properties) => {
+    const [status, setStatus] = useState(active);
+    const [display, setDisplay] = useState(true);
+    const set = useSetAtom(todos);
+    const toggle = () => {
+        const current = !status;
+        if (!current) {
+            notice({text: 'Congratulations!', type: 'success'});
+        } else {
+            notice({text: "What's up?", type: 'info'});
+        }
+        try {
+            trpc.todo.toggle.mutate({active: current, id});
+            setStatus(current);
+        } catch {}
+    };
+    const remove = () => {
+        try {
+            trpc.todo.delete.mutate(id);
+            set((todo) => {
+                const index = todo.findIndex((item) => item.id === id);
+                return [...todo.slice(0, index), ...todo.slice(index)];
+            });
+            setDisplay(false);
+        } catch {}
+    };
+    return (
+        <div
+            className={tw`flex justify-between py-2 px-3 shadow rounded mb-4 bg-white text(gray-700)`}
+            style={{display: display ? '' : 'none'}}
+        >
+            {description}
+            <div className={tw`flex`}>
+                {status ? (
+                    <IconCircleCheck
+                        className={tw`mr-2`}
+                        color='green'
+                        onClick={toggle}
+                    />
+                ) : (
+                    <IconRefreshDot
+                        className={tw`mr-2`}
+                        color='orange'
+                        onClick={toggle}
+                    />
+                )}
+                <IconCircleMinus
+                    color='currentColor'
+                    className={tw`text-gray-700`}
+                    onClick={remove}
+                />
+            </div>
+        </div>
+    );
 };
 
-interface Props {
-	id: number;
-	description: string;
-	active: boolean;
+interface Properties {
+    id: number;
+    description: string;
+    active: boolean;
 }
 
 export default Todo;

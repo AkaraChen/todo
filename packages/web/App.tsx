@@ -9,17 +9,17 @@ import '@akrc/ringo/style/message/ant.css';
 import '@akrc/ringo/style/notice/ant.css';
 
 const App = () => {
-	return (
-		<Provider>
-			<div
-				className={tw`flex flex-col items-center max-w-xl w-full m-auto p-4 h-screen`}
-			>
-				<Title />
-				<Input />
-				<List />
-			</div>
-		</Provider>
-	);
+    return (
+        <Provider>
+            <div
+                className={tw`flex flex-col items-center max-w-xl w-full m-auto p-4 h-screen`}
+            >
+                <Title />
+                <Input />
+                <List />
+            </div>
+        </Provider>
+    );
 };
 
 export default App;
