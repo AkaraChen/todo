@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "eslint-config-akrc": "^0.0.2",
+    "eslint-config-akrc": "^0.0.4",
     "eslint-plugin-unicorn": "^44.0.2",
     "zod": "^3.19.1"
   },
