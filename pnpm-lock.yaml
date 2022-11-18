@@ -5,11 +5,11 @@ importers:
   .:
     specifiers:
       eslint: ^8.27.0
-      eslint-config-akrc: ^0.0.2
+      eslint-config-akrc: ^0.0.4
       eslint-plugin-unicorn: ^44.0.2
       zod: ^3.19.1
     dependencies:
-      eslint-config-akrc: 0.0.2
+      eslint-config-akrc: 0.0.4
       eslint-plugin-unicorn: 44.0.2_eslint@8.27.0
       zod: 3.19.1
     devDependencies:
@@ -1858,8 +1858,8 @@ packages:
       semver: 6.3.0
     dev: false
 
-  /eslint-config-akrc/0.0.2:
-    resolution: {integrity: sha512-yoTgCY7l0poRUB2w3Z+Rxmuhd6voURTeUauF4m2sUbPtnLrt90cwgiTpLj2ba9/soBMHrhNo+yRtee8I0V+xoQ==}
+  /eslint-config-akrc/0.0.4:
+    resolution: {integrity: sha512-o1md9yiYPHO+o8GUk55HIBcmrFo7DopO4XNV6khd60XzXx9nkbQZoSz4+DivUUR5N+zJ2JwmvXAntWyNo/FX6g==}
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.43.0_wze2rj5tow7zwqpgbdx2buoy3m
       '@typescript-eslint/parser': 5.43.0_e3uo4sehh4zr4i6m57mkkxxv7y
