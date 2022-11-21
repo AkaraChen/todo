@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "eslint-config-akrc": "^0.0.7",
-    "eslint-plugin-unicorn": "^44.0.2",
+    "eslint-plugin-unicorn": "^45.0.0",
     "zod": "^3.19.1"
   },
   "devDependencies": {
