@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@trpc/server": "10.0.0-rc.8",
+    "@trpc/server": "10.0.0",
     "consola": "^2.15.3",
     "cors": "^2.8.5",
     "esno": "^0.16.3",
