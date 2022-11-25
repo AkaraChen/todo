@@ -17,7 +17,7 @@ importers:
 
   packages/core:
     specifiers:
-      '@trpc/server': 10.1.0
+      '@trpc/server': 10.2.0
       '@types/cors': ^2.8.12
       '@types/express': ^4.17.14
       '@types/node': ^18.11.9
@@ -31,7 +31,7 @@ importers:
       sqlite3: ^5.1.2
       typeorm: ^0.3.10
     dependencies:
-      '@trpc/server': 10.1.0
+      '@trpc/server': 10.2.0
       consola: 2.15.3
       cors: 2.8.5
       esno: 0.16.3
@@ -80,8 +80,8 @@ importers:
       '@reduxjs/toolkit': ^1.9.0
       '@tabler/icons': ^1.111.0
       '@todo/core': workspace:^1.0.0
-      '@trpc/client': 10.1.0
-      '@trpc/server': 10.1.0
+      '@trpc/client': 10.2.0
+      '@trpc/server': 10.2.0
       '@types/react': ^18.0.25
       '@types/react-dom': ^18.0.9
       '@vitejs/plugin-react': ^2.2.0
@@ -98,8 +98,8 @@ importers:
       '@reduxjs/toolkit': 1.9.0_react@18.2.0
       '@tabler/icons': 1.111.0_biqbaboplfbrettd7655fr4n2y
       '@todo/core': link:../core
-      '@trpc/client': 10.1.0_@trpc+server@10.1.0
-      '@trpc/server': 10.1.0
+      '@trpc/client': 10.2.0_@trpc+server@10.2.0
+      '@trpc/server': 10.2.0
       jotai: 1.9.2_3lzqd2prgnu7gkxqqdmtvzna5u
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -741,16 +741,16 @@ packages:
     dev: false
     optional: true
 
-  /@trpc/client/10.1.0_@trpc+server@10.1.0:
-    resolution: {integrity: sha512-E7L9l2OTa5lIdM0NYvQLJf/GLapskfiVLv0Jv7t6GVxEOFd+O4THWsWQgJVUUAz9iq805iMNkY3uqSvf4GJaWg==}
+  /@trpc/client/10.2.0_@trpc+server@10.2.0:
+    resolution: {integrity: sha512-Mehf6euqMzAak+Umay1LKol9nC716yBjHNqrF6blWY/n2hwSICrLXQwveNaHK7qjKXJ86b4aDW39KR02WCQP4A==}
     peerDependencies:
-      '@trpc/server': 10.1.0
+      '@trpc/server': 10.2.0
     dependencies:
-      '@trpc/server': 10.1.0
+      '@trpc/server': 10.2.0
     dev: false
 
-  /@trpc/server/10.1.0:
-    resolution: {integrity: sha512-UiRZPApLruhi1UKukTNsB9igFBEhEA0aMxy86Xp1OvbzuY00yoFcvDUYsBdBjp9mzIHR3yNjqrlfS/RNpPhZEw==}
+  /@trpc/server/10.2.0:
+    resolution: {integrity: sha512-WGOA2bk6JOnOywUu1gkAgwqnxZ5g+vNkL9EpCGLgKYwwMcjAwgNRgYzLPsDsR1XL48wmdYOzfWzJ0G575+g/jA==}
     dev: false
 
   /@types/body-parser/1.19.2:
