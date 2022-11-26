@@ -22,10 +22,10 @@ const Todo = ({description, active, id}: Properties) => {
             .mutate({active: current, id})
             .then(() => {
                 setStatus(current);
-                if (!current) {
-                    notice({text: 'Congratulations!', type: 'success'});
-                } else {
+                if (current) {
                     notice({text: 'What\'s up?', type: 'info'});
+                } else {
+                    notice({text: 'Congratulations!', type: 'success'});
                 }
             })
             .catch(() => {
