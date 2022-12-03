@@ -11,10 +11,10 @@
     "license": "ISC",
     "dependencies": {
         "eslint-config-akrc": "^0.0.8",
-        "eslint-plugin-unicorn": "^45.0.0",
+        "eslint-plugin-unicorn": "^45.0.1",
         "zod": "^3.19.1"
     },
     "devDependencies": {
-        "eslint": "^8.27.0"
+        "eslint": "^8.29.0"
     }
 }
