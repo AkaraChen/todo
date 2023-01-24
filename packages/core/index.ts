@@ -1,12 +1,12 @@
 import express from 'express';
 import * as trpcExpress from '@trpc/server/adapters/express';
-import {route} from './router';
+import { route } from './router';
 import cors from 'cors';
 import logger from './util/logger';
 import 'reflect-metadata';
-import {databaseInit} from './service/source';
+import { databaseInit } from './service/source';
 
-const trpc = trpcExpress.createExpressMiddleware({router: route});
+const trpc = trpcExpress.createExpressMiddleware({ router: route });
 
 const init = async () => {
     logger.info('Starting Todo Server...');

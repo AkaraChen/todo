@@ -1,5 +1,5 @@
-import {procedure, router} from './trpc';
-import {todoRoute} from './controller/todo';
+import { procedure, router } from './trpc';
+import { todoRoute } from './controller/todo';
 
 export const route = router({
     greeting: procedure.query(() => 'Hello, TRPC!'),

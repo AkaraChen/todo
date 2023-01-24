@@ -1,7 +1,7 @@
 import React from 'react';
-import {tw} from 'twind';
-import {todos} from '../store';
-import {useAtom} from 'jotai';
+import { tw } from 'twind';
+import { todos } from '../store';
+import { useAtom } from 'jotai';
 import Todo from './todo';
 import useRefresh from '../store/refresh';
 

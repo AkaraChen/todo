@@ -1,6 +1,6 @@
-import {trpc} from './trpc';
-import {useAtom} from 'jotai';
-import {todos} from '.';
+import { trpc } from './trpc';
+import { useAtom } from 'jotai';
+import { todos } from '.';
 
 const useRefresh = async () => {
     const [todo, setTodo] = useAtom(todos);

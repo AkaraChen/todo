@@ -78,7 +78,7 @@ importers:
       '@akrc/nashi': 0.2.3
       '@akrc/ringo': ^1.0.0
       '@reduxjs/toolkit': ^1.9.0
-      '@tabler/icons': ^1.111.0
+      '@tabler/icons-react': ^2.0.0
       '@todo/core': workspace:^1.0.0
       '@trpc/client': 10.9.0
       '@trpc/server': 10.9.0
@@ -96,7 +96,7 @@ importers:
       '@akrc/nashi': 0.2.3
       '@akrc/ringo': 1.0.1_eslint@8.30.0
       '@reduxjs/toolkit': 1.9.0_react@18.2.0
-      '@tabler/icons': 1.111.0_biqbaboplfbrettd7655fr4n2y
+      '@tabler/icons-react': 2.0.0_sh5qlbywuemxd2y3xkrw2y2kr4
       '@todo/core': link:../core
       '@trpc/client': 10.9.0_@trpc+server@10.9.0
       '@trpc/server': 10.9.0
@@ -822,19 +822,19 @@ packages:
     resolution: {integrity: sha512-Uy0+khmZqUrUGm5dmMqVlnvufZRSK0FbYzVgp0UMstm+F5+W2/jnEEQyc9vo1ZR/E5ZI/B1WjjoTqBqwJL6Krw==}
     dev: false
 
-  /@tabler/icons/1.111.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-TZWYiMT5ccqfHxRE0Qtgvl+sGsMbNkrv7cJMt/tm8TN9l/CDXx/o7d8uAwUN+3PAlSFfF5e/rD1bi1WJs2xNIA==}
+  /@tabler/icons-react/2.0.0_sh5qlbywuemxd2y3xkrw2y2kr4:
+    resolution: {integrity: sha512-KUgJtVS+HDLQuFfqIdgYMDAbUlfG6LqfPwomc26cS6BEL9v01YptZtBU+KVaP6QZ+kleKrHMzFJajOtK9xIXDw==}
     peerDependencies:
-      react: ^16.x || 17.x || 18.x
-      react-dom: ^16.x || 17.x || 18.x
-    peerDependenciesMeta:
-      react:
-        optional: true
-      react-dom:
-        optional: true
+      prop-types: ^15.7.2
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:
+      '@tabler/icons': 2.0.0
+      prop-types: 15.8.1
       react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@tabler/icons/2.0.0:
+    resolution: {integrity: sha512-ye93cVD8baCwJJ7J3GKlUM3FN+qW6lsEz4uaH8bHCwC8un2R4p+ZzyRNc/ksqVgMQJ4PKQ8xbYpv4dnbbRffsA==}
     dev: false
 
   /@tauri-apps/api/1.2.0:
@@ -1192,7 +1192,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.19.6_@babel+core@7.20.5
       magic-string: 0.27.0
       react-refresh: 0.14.0
-      vite: 4.0.0_@types+node@18.11.9
+      vite: 4.0.0
     transitivePeerDependencies:
       - supports-color
     dev: true

@@ -1,5 +1,5 @@
 import Todo from '../model/todo';
-import {AppDataSource} from './source';
+import { AppDataSource } from './source';
 
 const todoRepo = AppDataSource.getRepository(Todo);
 
@@ -21,12 +21,12 @@ export const getAllTodo = async () => {
 };
 
 export const deleteTodo = async (id: number) => {
-    const todo = await todoRepo.findOneBy({id});
+    const todo = await todoRepo.findOneBy({ id });
     await todoRepo.delete(todo);
 };
 
 export const toggleTodo = async (id: number, active: boolean) => {
-    const todo = await todoRepo.findOneBy({id});
+    const todo = await todoRepo.findOneBy({ id });
     todo.active = active;
     await todoRepo.save(todo);
 };

@@ -1,6 +1,6 @@
 import logger from '../util/logger';
 import 'reflect-metadata';
-import {DataSource} from 'typeorm';
+import { DataSource } from 'typeorm';
 import Todo from '../model/todo';
 
 export const AppDataSource = new DataSource({

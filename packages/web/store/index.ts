@@ -1,4 +1,4 @@
-import {atomWithStorage} from 'jotai/utils';
+import { atomWithStorage } from 'jotai/utils';
 
 export interface Todo {
     id: number;

@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
-import {tw} from 'twind';
-import {todos} from '../store';
-import {trpc} from '../store/trpc';
-import {notice} from '@akrc/ringo';
-import {useSetAtom} from 'jotai';
+import React, { useState } from 'react';
+import { tw } from 'twind';
+import { todos } from '../store';
+import { trpc } from '../store/trpc';
+import { notice } from '@akrc/ringo';
+import { useSetAtom } from 'jotai';
 
 const Input = () => {
     const [input, setInput] = useState('');
@@ -19,7 +19,7 @@ const Input = () => {
             .then(id => {
                 setTodo(todo => [
                     ...todo,
-                    {id, description: input, active: true}
+                    { id, description: input, active: true }
                 ]);
                 notice({
                     text: 'Todo has created successfully.',

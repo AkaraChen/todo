@@ -1,5 +1,5 @@
 import React from 'react';
-import {tw} from 'twind';
+import { tw } from 'twind';
 
 const Title = () => {
     return (

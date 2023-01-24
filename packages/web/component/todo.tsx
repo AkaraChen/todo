@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
-import {tw} from 'twind';
-import {IconCircleCheck, IconCircleMinus, IconRefreshDot} from '@tabler/icons';
-import {trpc} from '../store/trpc';
-import {notice} from '@akrc/ringo';
-import {useSetAtom} from 'jotai';
-import {todos} from '../store';
+import React, { useState } from 'react';
+import { tw } from 'twind';
+import { IconCircleCheck, IconCircleMinus, IconRefreshDot } from '@tabler/icons-react';
+import { trpc } from '../store/trpc';
+import { notice } from '@akrc/ringo';
+import { useSetAtom } from 'jotai';
+import { todos } from '../store';
 
 interface Properties {
     id: number;
@@ -12,24 +12,24 @@ interface Properties {
     active: boolean;
 }
 
-const Todo = ({description, active, id}: Properties) => {
+const Todo = ({ description, active, id }: Properties) => {
     const [status, setStatus] = useState(active);
     const [display, setDisplay] = useState(true);
     const set = useSetAtom(todos);
     const toggle = () => {
         const current = !status;
         trpc.todo.toggle
-            .mutate({active: current, id})
+            .mutate({ active: current, id })
             .then(() => {
                 setStatus(current);
                 if (current) {
-                    notice({text: 'What\'s up?', type: 'info'});
+                    notice({ text: 'What\'s up?', type: 'info' });
                 } else {
-                    notice({text: 'Congratulations!', type: 'success'});
+                    notice({ text: 'Congratulations!', type: 'success' });
                 }
             })
             .catch(() => {
-                notice({text: 'Toggle failed.'});
+                notice({ text: 'Toggle failed.' });
             });
     };
     const remove = () => {
@@ -43,13 +43,13 @@ const Todo = ({description, active, id}: Properties) => {
                 setDisplay(false);
             })
             .catch(() => {
-                notice({text: 'Remove failed.'});
+                notice({ text: 'Remove failed.' });
             });
     };
     return (
         <div
             className={tw`flex justify-between py-2 px-3 shadow rounded mb-4 bg-white text(gray-700)`}
-            style={{display: display ? '' : 'none'}}
+            style={{ display: display ? '' : 'none' }}
         >
             {description}
             <div className={tw`flex`}>

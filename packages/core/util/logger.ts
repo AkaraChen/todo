@@ -8,7 +8,7 @@ log4js.configure({
             filename: '../../core.log'
         }
     },
-    categories: {default: {appenders: ['core'], level: 'info'}}
+    categories: { default: { appenders: ['core'], level: 'info' } }
 });
 
 const logger = log4js.getLogger('core');
