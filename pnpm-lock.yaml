@@ -17,7 +17,7 @@ importers:
 
   packages/core:
     specifiers:
-      '@trpc/server': 10.16.0
+      '@trpc/server': 10.35.0
       '@types/cors': ^2.8.12
       '@types/express': ^4.17.14
       '@types/node': ^18.11.9
@@ -31,7 +31,7 @@ importers:
       sqlite3: ^5.1.2
       typeorm: ^0.3.10
     dependencies:
-      '@trpc/server': 10.16.0
+      '@trpc/server': 10.35.0
       consola: 2.15.3
       cors: 2.8.5
       esno: 0.16.3
@@ -80,8 +80,8 @@ importers:
       '@reduxjs/toolkit': ^1.9.0
       '@tabler/icons-react': ^2.0.0
       '@todo/core': workspace:^1.0.0
-      '@trpc/client': 10.16.0
-      '@trpc/server': 10.16.0
+      '@trpc/client': 10.35.0
+      '@trpc/server': 10.35.0
       '@types/react': ^18.0.25
       '@types/react-dom': ^18.0.9
       '@vitejs/plugin-react': ^3.0.0
@@ -98,8 +98,8 @@ importers:
       '@reduxjs/toolkit': 1.9.0_react@18.2.0
       '@tabler/icons-react': 2.0.0_sh5qlbywuemxd2y3xkrw2y2kr4
       '@todo/core': link:../core
-      '@trpc/client': 10.16.0_@trpc+server@10.16.0
-      '@trpc/server': 10.16.0
+      '@trpc/client': 10.35.0_@trpc+server@10.35.0
+      '@trpc/server': 10.35.0
       jotai: 2.0.0_react@18.2.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -970,16 +970,16 @@ packages:
     dev: false
     optional: true
 
-  /@trpc/client/10.16.0_@trpc+server@10.16.0:
-    resolution: {integrity: sha512-Hxxi3mOcUyszosj6xpPDIIBV1TOhXKpZ191BW/60r1lXBAfNrDUWHOTol1Dfu+hpcx4bpj3WRyob5cf+6KeCDA==}
+  /@trpc/client/10.35.0_@trpc+server@10.35.0:
+    resolution: {integrity: sha512-FyVNQGLLsNourpYq7bojvvvpM63woCPL9c+lJo9x1Yheop5fng2GEyiVcVjCmBNk5tVARHjG9bTG1UeNF5t8OQ==}
     peerDependencies:
-      '@trpc/server': 10.16.0
+      '@trpc/server': 10.35.0
     dependencies:
-      '@trpc/server': 10.16.0
+      '@trpc/server': 10.35.0
     dev: false
 
-  /@trpc/server/10.16.0:
-    resolution: {integrity: sha512-lCUq7AB7vcgrNbaN+xP/AN62OjKDgrRyG7fTDPv5K633ut7KJ3m57qs60VRBOgp9vow6elAg51pKFFDtPHbTRA==}
+  /@trpc/server/10.35.0:
+    resolution: {integrity: sha512-UntbE9gG+kB2nEwuJ0hw7AmQuRWw67voKaVBPBA7Ow6+aGZc00gva7015Ey5BT7Qf1wq7xJMLUdgw4QiVU+VpQ==}
     dev: false
 
   /@types/body-parser/1.19.2:
