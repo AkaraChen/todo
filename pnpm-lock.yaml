@@ -21,7 +21,7 @@ importers:
       '@types/cors': ^2.8.12
       '@types/express': ^4.17.14
       '@types/node': ^18.11.9
-      consola: ^2.15.3
+      consola: ^3.0.0
       cors: ^2.8.5
       esno: ^0.16.3
       express: ^4.18.2
@@ -32,7 +32,7 @@ importers:
       typeorm: ^0.3.10
     dependencies:
       '@trpc/server': 10.16.0
-      consola: 2.15.3
+      consola: 3.4.2
       cors: 2.8.5
       esno: 0.16.3
       express: 4.18.2
@@ -1598,8 +1598,9 @@ packages:
     resolution: {integrity: sha512-JsPKdmh8ZkmnHxDk55FZ1TqVLvEQTvoByJZRN9jzI0UjxK/QgAmsphz7PGtqgPieQZ/CQcHWXCR7ATDNhGe+YA==}
     dev: false
 
-  /consola/2.15.3:
-    resolution: {integrity: sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw==}
+  /consola/3.4.2:
+    resolution: {integrity: sha512-5IKcdX0nnYavi6G7TtOhwkYzyjfJlatbjMjuLSfE2kYT5pMDOilZ4OvMhi637CcDICTmz3wARPoyhqyX1Y+XvA==}
+    engines: {node: ^14.18.0 || >=16.10.0}
     dev: false
 
   /console-control-strings/1.1.0:
